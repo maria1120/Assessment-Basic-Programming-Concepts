@@ -4,6 +4,7 @@ public class SummativeSums {
 
     public static void main(String[] args) {
         int[] myArray = {5,10,15,20};
+        //call the method
        System.out.println("Array sum: "+ returnSum(myArray));
 
     }

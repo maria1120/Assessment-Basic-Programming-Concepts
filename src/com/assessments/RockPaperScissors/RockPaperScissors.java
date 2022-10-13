@@ -39,7 +39,7 @@ public class RockPaperScissors {
                     }
                     // Random choice for the computer
                     computerChoice = (int) (Math.random() * (3 - 1) + 1);
-
+                    // if the chose is equal
                     if (computerChoice == userChoice) {
                         System.out.println("Tie");
                         numberOfRounds--;

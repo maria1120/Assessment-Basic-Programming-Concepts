@@ -17,7 +17,7 @@ public class DogGenetics {
         //ask and save the dog name
         System.out.println("What is your dog's name?");
         String dogName = input.nextLine();
-
+        //print the result
         System.out.println("Well then, I have this highly reliable report on " + dogName + "'s prestigious background right here.");
         System.out.println(dogName + " is:");
         System.out.println();

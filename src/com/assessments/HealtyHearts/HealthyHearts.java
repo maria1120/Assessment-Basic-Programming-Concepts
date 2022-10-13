@@ -13,7 +13,7 @@ public class HealthyHearts {
         age = input.nextInt();
         //calculate maximum rate
         int maximumRate = 220-age;
-        //calculate the range
+        //calculate the range of low and high
        int targetRateHigh = (int)(0.85 * maximumRate);
        int targetRateLow = (int)(0.50 * maximumRate);
 
