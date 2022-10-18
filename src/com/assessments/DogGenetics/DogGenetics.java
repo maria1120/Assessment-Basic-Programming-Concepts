@@ -14,6 +14,7 @@ public class DogGenetics {
         int [] percentage = new int[breed.length];
 
 
+
         //ask and save the dog name
         System.out.println("What is your dog's name?");
         String dogName = input.nextLine();
@@ -23,13 +24,23 @@ public class DogGenetics {
         System.out.println();
         System.out.println();
         //Assign random values for the percents
+        int reminder = 100;
         for(int i=0; i<percentage.length; i++) {
-            percentage[i] = (int) (Math.random() * (100 - 1) + 1);
+
+            percentage[i] = getPercentage(reminder);
+            reminder = reminder - percentage[i];
         }
          //print the two Arrays
-        for(int j=0; j<breed.length; j++){
-            System.out.println(percentage[j] + "% " + breed[j] );
+        for(int j=0; j<breed.length; j++) {
+
+                System.out.println(percentage[j] + "% " + breed[j]);
+
         }
+        }
+
+
+        public static int getPercentage(int reminder){
+        return (int) (Math.random() * reminder +1);
         }
 
     }
